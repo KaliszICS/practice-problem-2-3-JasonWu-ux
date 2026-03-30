@@ -4,8 +4,19 @@ public class PracticeProblem {
 
 	}
 
-	public static void q1() {
-		//Write question 1 code here
+	public static void bubbleSortString(String[] strings) {
+		int n = strings.length;
+		String temp;
+		for (int i = 0; i < n - 1; i++) {
+
+			for (int j = 0; j < n - i - 1; j++)
+				
+			if (strings[j].compareToIgnoreCase(strings[j + 1]) > 0) {
+				temp = strings[j];
+				strings[j] = strings[j + 1];
+				strings[j + 1] = temp;
+			}
+		}
 	}
 
 	public static void q2() {
@@ -25,3 +36,4 @@ public class PracticeProblem {
 	}
 
 }
+
